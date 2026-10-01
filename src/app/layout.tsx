@@ -45,6 +45,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
+      <head>
+        <script
+          async
+          src="https://t.freshbite-demo.com/sdk/v2.js"
+          data-key="cs_live_621r4b262f5m5d0v3h2o5d6s22435y43"
+        />
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased bg-[#fcfbf9] text-stone-900`}>
         <ClientProviders>{children}</ClientProviders>
         <Script
