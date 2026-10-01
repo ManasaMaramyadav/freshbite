@@ -20,6 +20,7 @@ body {
 }
 
 /* Custom scrollbar */
+
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -39,11 +40,13 @@ body {
 }
 
 /* Animations */
+
 @keyframes fadeIn {
   from {
     opacity: 0;
     transform: translateY(6px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
