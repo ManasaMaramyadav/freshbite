@@ -1,3 +1,4 @@
+import Script from "next/script";
 import type { Metadata, Viewport } from 'next';
 import localFont from 'next/font/local';
 import './globals.css';
@@ -46,6 +47,11 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <body className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased bg-[#fcfbf9] text-stone-900`}>
         <ClientProviders>{children}</ClientProviders>
+        <Script
+  async
+  src="https://t.freshbite-demo.com/sdk/v2.js"
+  data-key="cs_live_621r4b262f5m5d0v3h2o5d6s22435y43"
+/>
       </body>
     </html>
   );
